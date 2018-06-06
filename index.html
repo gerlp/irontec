@@ -1,0 +1,69 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="/img/favicon.ico" />
+		<script src="js/jquery/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery/jquery-ui.js"></script>
+		<script src="js/functions.js"></script>
+		<title>Consulta coches</title>
+		<style>
+			body{
+				background:#ccc;
+				margin:0px;
+				font-family:"Myriad Pro", Verdana, Serif;
+			}
+
+			.nodisplay{
+				display:none;
+			}
+
+			.uncoche{
+				width:200px;
+				float:left;
+				margin: 5px;
+			}
+
+			.uncoche img {
+				width:100%;
+			}
+
+			.clear{
+				clear:both;
+			}
+		</style>
+    </head>
+    <body>
+		<div id='index'>
+			<form id="formCoches">
+				<p>Consulta: </p>
+				<p>Todos<input type="radio" id="todos" name="tipoConsulta" checked></p>
+				
+				<p>Por ID<input type="radio" id="porId" name="tipoConsulta"></p>
+				
+				<p>Por Color<input type="radio" id="porColor" name="tipoConsulta"></p>	
+				
+				<div id="campoId" class="nodisplay">ID:<input type="text" name="id" /></div>
+				
+				<div id="campoColor" class="nodisplay"><select name="color" >
+					<option value="0"> -- Selecciona un color --</option>
+					<option value="Blanco"> Blanco </option>
+					<option value="Gris"> Gris </option>
+					<option value="Rojo"> Rojo </option>
+				</select>
+				</div>
+
+				<input type="hidden" name="metodo" id="metodo" value="1"/>
+				<input type="button" id="submitConsulta" value="Consultar" />
+			</form>
+		</div>
+		
+		<div id='resultado' class="nodisplay">
+			<div id="cochesResultado"></div>			
+			<div class="clear">
+				<input type="button" id="nuevaConsulta" value="Nueva consulta" />
+			</div>
+		</div>		
+		
+    </body>
+</html>
+

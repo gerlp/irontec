@@ -1,0 +1,10 @@
+id: coches_resource
+plugin_id: coches_resource
+granularity: method
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

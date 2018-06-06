@@ -1,0 +1,6 @@
+coches.admin:
+  title: 'Coches module settings'
+  description: 'make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: coches.content
+  weight: 100

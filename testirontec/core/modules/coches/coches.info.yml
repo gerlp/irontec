@@ -1,0 +1,7 @@
+name: coches
+description: "test de parametrizacion de coches"
+package: Custom
+
+type: module
+core: 8.x
+

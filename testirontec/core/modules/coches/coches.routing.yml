@@ -1,0 +1,15 @@
+coches.content:
+  path: '/coches'
+  defaults:
+    _controller: '\Drupal\coches\Controller\CochesController::content'
+    _title: 'Coches'
+  requirements:
+    _permission: 'access content'
+    
+custom_rest_module.get:
+ path: 'coches/coches_resource'
+ defaults:
+   _controller: '\Drupal\coches\Plugin\rest\resource\CochesResource::get'
+ methods: [GET]
+ requirements:
+   _access: 'TRUE'
