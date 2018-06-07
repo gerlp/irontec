@@ -29,11 +29,11 @@ $databases['default']['default'] = array (
 );
 ```
 
-## Comprobar la instalación
+### Comprobar la instalación
 
 En un navegador abrir la url http://localhost/irontec/testirontec/coches y se mostrará la instalación drupal listando los coches dados de alta en la base de datos.
 
-### Cliente / Servicio API REST
+## Cliente / Servicio API REST
 
 El cliente Javascript solicitado ha sido desarrollado con jQuery. 
 
