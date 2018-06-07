@@ -3,32 +3,32 @@ url_coches 	= "testirontec/coches/coches_resource?_format=json";
 $(function(){
 	
     $('#todos').click(function() {
-		jQuery('#metodo').val("1");
-		jQuery('#campoId').addClass("nodisplay");
-		jQuery('#campoColor').addClass("nodisplay");
+		$('#metodo').val("1");
+		$('#campoId').addClass("nodisplay");
+		$('#campoColor').addClass("nodisplay");
 	});		
     $('#porId').click(function() {
-		jQuery('#metodo').val("2");
-		jQuery('#campoId').removeClass("nodisplay");
-		jQuery('#campoColor').addClass("nodisplay");
+		$('#metodo').val("2");
+		$('#campoId').removeClass("nodisplay");
+		$('#campoColor').addClass("nodisplay");
 	});
     $('#porColor').click(function() {
-		jQuery('#metodo').val("3");
-		jQuery('#campoId').addClass("nodisplay");
-		jQuery('#campoColor').removeClass("nodisplay");
+		$('#metodo').val("3");
+		$('#campoId').addClass("nodisplay");
+		$('#campoColor').removeClass("nodisplay");
 	});	
     $('#submitConsulta').click(function() {
-		jQuery.ajax({
+		$.ajax({
 		  url: url_coches,
-		  data: jQuery('#formCoches').serialize(),
+		  data: $('#formCoches').serialize(),
 			dataType:"json",
 		  success: function(data) 
 		  {
 			data=JSON.parse(data);
 
 			if (data.length>0){
-				jQuery('#index').addClass("nodisplay");
-				jQuery('#resultado').removeClass("nodisplay");
+				$('#index').addClass("nodisplay");
+				$('#resultado').removeClass("nodisplay");
 				for (i=0;i<data.length;i++){
 					unCoche="<div class='uncoche'>";
 					unCoche+="<p>ID: "+data[i].id_coche+"</p>";
@@ -56,8 +56,8 @@ $(function(){
 	
     $('#nuevaConsulta').click(function() {
 		$('#cochesResultado').html("");
-		jQuery('#index').removeClass("nodisplay");
-		jQuery('#resultado').addClass("nodisplay");
+		$('#index').removeClass("nodisplay");
+		$('#resultado').addClass("nodisplay");
 	});	
 	
 });
