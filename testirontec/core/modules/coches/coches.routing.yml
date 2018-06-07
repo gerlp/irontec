@@ -6,7 +6,7 @@ coches.content:
   requirements:
     _permission: 'access content'
     
-custom_rest_module.get:
+coches.get:
  path: 'coches/coches_resource'
  defaults:
    _controller: '\Drupal\coches\Plugin\rest\resource\CochesResource::get'
