@@ -33,8 +33,7 @@ En un navegador abrir la url http://localhost/irontec/testirontec/coches y apare
 
 El cliente Javascript solicitado ha sido desarrollado con jQuery. 
 
-En un navegador abrir http://localhost/irontec/index.html
-Cada vez que se realice una consulta, una petición ajax será realizada a la instalación Drupal. 
+En un navegador abrir http://localhost/irontec/index.html y cada vez que se realice una consulta, se realizará una petición a la instalación Drupal. 
 
 ## Authors
 
