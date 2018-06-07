@@ -6,13 +6,6 @@ prueba tecnica de irontec: Una instalación básica Drupal que sirve mediante un
 
 Clonar o descargar el repositorio en la carpeta root del servidor local. 
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
@@ -33,10 +26,7 @@ $databases['default']['default'] = array (
 
 ## Comprobar la instalación
 
-En un navegador abrir la url http://localhost/irontec/testirontec/coches
-Aparecerán listados todos los coches que están dados de alta en la Base de datos. 
-
-Explain how to run the automated tests for this system
+En un navegador abrir la url http://localhost/irontec/testirontec/coches y aparecerán listados todos los coches que están dados de alta en la Base de datos. 
 
 
 ### Cliente / Servicio API REST
@@ -48,5 +38,5 @@ Cada vez que se realice una consulta, una petición ajax será realizada a la in
 
 ## Authors
 
-* **Germán López** (https://github.com/montxlp)
+* **Germán López** 
 
