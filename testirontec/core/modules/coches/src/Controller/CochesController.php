@@ -11,17 +11,19 @@ class CochesController extends ControllerBase {
    *
    * @return array
    */
-  public function content() {
+	public function content() {
 
-	$infoImpresion="";  
-	  
-		
-		$infoImpresion=$this->getCocheById(1);
+		$infoImpresion="";  
+
+		$coches=$this->getAll();
+		foreach ($coches as $coche){
+			$infoImpresion.=$this->recorrerFila($coche);
+		}
 		return [
 		  '#type' => 'markup',
 		  '#markup' => $this->t($infoImpresion),
 		];
-	  }
+	}
 
 	public function getCocheById ($id_coche){
 		$query = db_query("SELECT * FROM coches WHERE id_coche= :id",  array(":id" => $id_coche));
@@ -55,13 +57,16 @@ class CochesController extends ControllerBase {
 		}
 		
 	}		
-	
-	public function recorrerFila($fila){
-		$respuesta="";
-		foreach ($fila as $clave=>$valor) {
-			$respuesta.="$clave: $valor. <br>";
+	public function recorrerFila ($uncoche) {
+		$res="";
+		foreach ($uncoche as $c=>$v){
+			if ($c!="foto"){
+				$res.="$c = $v <br>";
+			}else{
+				$res.="<img src='$v' style='max-width:200px'/> <br>";
+			}
 		}
-		return	$respuesta;	
+		$res.="----------<br><br>";
+		return $res;
 	}
-  
   }

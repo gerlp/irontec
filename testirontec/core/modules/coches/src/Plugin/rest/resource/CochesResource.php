@@ -44,7 +44,7 @@ class CochesResource extends ResourceBase {
 	}
 
     $response= new ResourceResponse(json_encode($resultado));
-	$response->addCacheableDependency($account);
+	$response->addCacheableDependency();
 	return $response;
   }
 }
