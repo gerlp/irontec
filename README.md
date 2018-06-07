@@ -10,11 +10,11 @@ El proyecto ha sido desarrollado utilizando un entorno XAMPP en el sistema opera
 ## Getting Started
 
 Clonar o descargar el repositorio en la carpeta web del servidor local (en XAMPP, htdocs).  
-Si no se crea el directorio irontec/ al clonar el repositorio, crearlo manualmente y clonar el repositorio dentro de él.
+Si no se crea el directorio irontec/ al clonar el repositorio, crearlo manualmente y clonar el repositorio dentro.
 Funcionaría igual sin este directorio, pero el resto de instrucciones de este readme.md dan por hecho su existencia y que el proyecto está en él. 
 
 
-Cargar el archivo del directorio BBDD/ en la base de datos del servidor y establecer en el archivo testirontec/sites/default/settings.php el username y password de acceso a la base de datos. 
+Importar la base de datos del directorio BBDD/ en el servidor y establecer en el archivo testirontec/sites/default/settings.php el username y password de acceso a la base de datos. 
 
 ```
 $databases['default']['default'] = array (
