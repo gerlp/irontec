@@ -1,8 +1,8 @@
 # irontec
 
-prueba tecnica de irontec: Una instalación básica Drupal que sirve mediante API REST entidades "coche".
+prueba técnica para Irontec: Una instalación básica Drupal que sirve mediante API REST entidades "coche".
 
-### Prerequisites
+### Prerequisitos
 
 El proyecto ha sido desarrollado utilizando un entorno XAMPP en el sistema operativo Windows 10, cualquier otro entorno de desarrollo local es válido. 
 
