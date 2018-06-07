@@ -2,7 +2,7 @@
 
 prueba técnica para Irontec: Una instalación básica Drupal que sirve mediante API REST entidades "coche".
 
-### Prerequisitos
+### Prerrequisitos
 
 El proyecto ha sido desarrollado utilizando un entorno XAMPP en el sistema operativo Windows 10, cualquier otro entorno de desarrollo local es válido. 
 
@@ -14,7 +14,7 @@ Si no se crea el directorio irontec/ al clonar el repositorio, crearlo manualmen
 No es necesario para que funcione, pero el resto de instrucciones de este readme.md dan por hecho la existencia de este directorio. 
 
 
-Cargar el archivo del directorio BBDD/ en la base de datos del servidor y establecer en el archivo testirontec/sites/default/settings.php los datos de acceso a la base de datos. 
+Cargar el archivo del directorio BBDD/ en la base de datos del servidor y establecer en el archivo testirontec/sites/default/settings.php el username y password de acceso a la base de datos. 
 
 ```
 $databases['default']['default'] = array (
